@@ -9,7 +9,7 @@ function index(req, res){
 
 function show(req, res){
     const skill = Skill.getOne(req.params.id);
-    res.render('skills/show.ejs', { todo });
+    res.render('skills/show.ejs', { skill });
 }
 
 
