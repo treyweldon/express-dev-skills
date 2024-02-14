@@ -4,7 +4,7 @@ const { request } = require('../server');
 
 function index(req, res){
     const skills = Skill.getAll();
-    res.render('skills/skills.ejs', { skills: skill })
+    res.render('skills/skills.ejs', { skills: skills })
 }
 
 function show(req, res){
