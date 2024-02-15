@@ -15,3 +15,18 @@ h1, h3, p {
 li {
   color: white;
 }
+
+button {
+  background-color: lightblue;
+  color: rgb(20, 0, 110);
+  border-radius: 15px;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+li {
+  list-style: none;
+}
