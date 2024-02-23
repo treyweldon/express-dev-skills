@@ -25,10 +25,15 @@ function index(req, res){
     res.render('skills/skills.ejs', { skills: skills })
 };
 
-function show(req, res){
+// function show(req, res){
+//     const skill = Skill.getOne(req.params.id);
+//     res.render('skills/show.ejs', { skill });
+// };
+
+function show(req, res) {
     const skill = Skill.getOne(req.params.id);
-    res.render('skills/show.ejs', { skill });
-};
+    res.render('skills/show', { skill });
+  }
 
 function newSkill(req, res){
     res.render('skills/new', { title: 'New Skill' });
